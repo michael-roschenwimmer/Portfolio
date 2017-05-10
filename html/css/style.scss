@@ -1,11 +1,12 @@
-@import "Cinzel";
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*VARS*/
 $font-stack:'Montserrat';
 $font-bold:'900';
 $primary-color:#4d545c;
-$secondary-color:#eee;
+$secondary-color:#eee; 
 $bg-white:white;
 
 /*MIXINS*/
@@ -15,8 +16,6 @@ $bg-white:white;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
-
-
 
 body {
 	background-color:$primary-color;
@@ -28,7 +27,7 @@ body {
 	position:relative;
 	width:520px;
 	height:520px;
-
+  
 	padding:10px;
 	margin:0 auto;
 	margin-top: 100px;
@@ -70,8 +69,8 @@ body {
 	}
 }
 
-/*******************************************************
-
+/******************************************************* 
+	
  * User photo animation
 
 *******************************************************/
@@ -79,12 +78,12 @@ body {
 @include keyframes(expand) {
 	0% {
 		top: 0px;
-		@include transform(rotate(0deg));
+		@include transform(rotate(0deg)); 
 	}
 	100% {
 		height:320px;
 		top: 0px;
-		@include transform(rotate(360deg));
+		@include transform(rotate(360deg)); 
 		@include border-radius(10px);
 		@include transition(all .2s forwards);
 	}
@@ -237,7 +236,7 @@ footer {
 	padding:0px 20px 20px 0px;
 	bottom:0px;
 	right:0px;
-
+	
 	.inspiration {
 		width:100%;
 		text-align:right;
@@ -245,30 +244,30 @@ footer {
 		font-family:$font-stack;
 		font-size:12px;
 		opacity:.6;
-		a {
+		a { 
 			color:#000;
 			text-decoration:none;
 		}
-		a:hover {
+		a:hover { 
 			color:#ff7d04;
 			text-decoration:underline;
 		}
 	}
-	.copyright {
+	.copyright { 
 		text-align:right;
 		font-family:$font-stack;
 		font-size:12px;
 	}
-	.copyright {
+	.copyright { 
 		text-align:right;
 		font-family:$font-stack;
 		font-size:12px;
 
-		a {
+		a { 
 			color:#000;
 			text-decoration:none;
 		}
-		a:hover {
+		a:hover { 
 			color:#ff7d04;
 			text-decoration:underline;
 		}
