@@ -1,10 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/*VARS*/
-
-
-/*MIXINS*/
-
 body {
     background-color: #4d545c;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -355,6 +350,8 @@ h5 > em:hover {
     animation: moveUser 0.3s 1 forwards;
     width: 160px;
 }
+
+
 
 .user-name {
     width: 100%;
